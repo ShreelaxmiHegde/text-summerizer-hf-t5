@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text summerizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Text Summarizer</h1>
+        <h3>Powered by Hugging Face Transformers (T5 - "t5-small")</h3>
+        <br>
+        <hr>
+        <br><br>
+        <p>Paste or write content below to generate a concise summary.</p>
+
+        <form id="summarization-form">
+            <textarea id="dialogue-input" placeholder="Enter your text here..." required></textarea>
+            <button type="submit">Summarize</button>
+        </form>
+
+        <div class="divider"></div>
+
+        <div class="summary-output">
+            <h3>Summary</h3>
+            <p id="summary-text">Your summary will appear here...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
